@@ -1,0 +1,61 @@
+content {
+  height: 100%;
+  width: 100%;
+}
+.layout {
+  height: 100%;
+  width: 100%;
+}
+.slides-area {
+  position: absolute;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  width: 300px;
+  border-right: 3px solid rgb(0, 0, 0);
+  left: 0;
+  overflow-y: scroll;
+}
+.slide-container {
+  height: 116px;
+  width: 216px;
+  margin: 0 8px 16px;
+  display: flex;
+  cursor: move;
+}
+.card-area {
+  position: absolute;
+  left: 350px;
+  width: 56%;
+  height: 100%;
+  display: inline-flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+.card-container {
+  height: 160px;
+  width: 260px;
+  margin: 0 8px 16px;
+  cursor: move;
+}
+
+.sketch-area {
+  position: absolute;
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  width: 300px;
+  border-left: 3px solid rgb(0, 0, 0);
+  right: 0;
+  overflow-y: scroll;
+}
+.sketch-container {
+  height: 116px;
+  width: 216px;
+  margin: 0 8px 16px;
+  display: flex;
+  cursor: move;
+}

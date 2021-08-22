@@ -1,0 +1,3 @@
+<div cdkDropList [id]="uId" class="play-card" [ngStyle]="{backgroundColor: color}" (cdkDropListDropped)="drop($event)">
+  <img *ngIf="imageUrl" src={{imageUrl}}>
+</div>

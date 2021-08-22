@@ -1,0 +1,33 @@
+<div class="content">
+  <table class="layout">
+    <tbody>
+      <tr>
+        <td>
+          <div class="slides-area" cdkDropList #slideList="cdkDropList" [cdkDropListConnectedTo]="[areaList]"
+            [cdkDropListData]="slides" (cdkDropListDropped)="drop($event)" >
+            <div class="slide-container" *ngFor="let item of slides" cdkDrag>
+              <app-slide [color]="item.color"></app-slide>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div cdkDropList #areaList="cdkDropList"  [cdkDropListData]="playbook"
+            (cdkDropListDropped)="drop($event)" class="card-area">
+            <div class="card-container" *ngFor="let item of playbook"
+              cdkDrag>
+              <app-play-card  [uId]="item.uId" [color]="item.color" [imageUrl]="item.imageUrl" ></app-play-card>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="sketch-area" cdkDropList #sketchList="cdkDropList" [cdkDropListConnectedTo]="playCarsIds"
+            [cdkDropListData]="sketches" (cdkDropListDropped)="drop($event)">
+            <div class="sketch-container" *ngFor="let item of sketches" cdkDrag>
+              <app-sketch [imageUrl]="item.imageUrl"></app-sketch>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
