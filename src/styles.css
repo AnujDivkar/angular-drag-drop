@@ -10,3 +10,18 @@ body {
     height: 100%;
     background: #c2e59c;
 }
+.mobile-screen {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .desktop-screen {
+        display: none;
+    }
+    .mobile-screen {
+        display: block;
+    }
+    body {
+        height: 100%;
+        background: #f9f9f9;
+    }
+}
