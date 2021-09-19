@@ -22,12 +22,12 @@ export class AppComponent {
   ];
   playbook: Array<Item> = [];
   sketches: Array<Item> = [
-    new Item({ imageUrl : '../angular-drag-drop/assets/Forest.jfif' }),
-    new Item({ imageUrl : '../angular-drag-drop/assets/Tree.jfif' }),
-    new Item({ imageUrl : '../angular-drag-drop/assets/Lake.jfif' }),
-    new Item({ imageUrl : '../angular-drag-drop/assets/Mountains.jfif' }),
-    new Item({ imageUrl : '../angular-drag-drop/assets/Nature.jfif' }),
-    new Item({ imageUrl : '../angular-drag-drop/assets/Waterfall.jfif' }),
+    new Item({ imageUrl : '../assets/Forest.jfif' }),
+    new Item({ imageUrl : '../assets/Tree.jfif' }),
+    new Item({ imageUrl : '../assets/Lake.jfif' }),
+    new Item({ imageUrl : '../assets/Mountains.jfif' }),
+    new Item({ imageUrl : '../assets/Nature.jfif' }),
+    new Item({ imageUrl : '../assets/Waterfall.jfif' }),
   ];
 
   drop(event: CdkDragDrop<Array<Item>>) {
